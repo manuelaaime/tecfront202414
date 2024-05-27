@@ -4,43 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro ListNotes</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Meu Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <h2>Formulário de Contato</h2>
-        <form id="myForm" action="resultado.html" method="get">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="container">
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
+            <div class="form-wrapper">
 
-            <button type="submit">Enviar</button>
-        </form>
+                <h2>Cadastro ListNotes</h2>
+                <form id="signup-form" action="login.html">
+                    <div class="input-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="Usuário" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Senha" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+
+                </form>
+            </div>
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Meu Site - Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
